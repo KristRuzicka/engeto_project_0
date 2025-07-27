@@ -101,13 +101,12 @@ print(f"There are {sum_numbers} numeric strings.")
 print(f"The sum of all the numbers is {suma}.")
 print("-" * 38)
 
-#graph
+#Get number of words of specific lengths
 print("-" * 28)
 print("LEN|".rjust(5), "OCCURENCES".ljust(15), "|NR.")
 print("-" * 28)
 
 occurence = {}
-
 for word in chosen_text_slova:
     length = len(word)
     if length in occurence:
@@ -115,6 +114,7 @@ for word in chosen_text_slova:
     else:
         occurence[length] = 1
 
+#graph
 for length in sorted(occurence):
     stars = '*' * occurence[length]
     print(f"{str(length).rjust(3)} | {stars.ljust(15)} | {occurence[length]}")
