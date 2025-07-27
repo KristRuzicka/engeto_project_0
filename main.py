@@ -36,7 +36,7 @@ garpike and stingray are also present.'''
 
 #login
 users = {"bob" : "123", "ann" : "pass123", "mike" : "password 123", "liz" : "pass 123"}
-username = input("Plese enter: \nUsername: " )
+username = input("Please enter: \nUsername: " )
 password = input("Password: ")
 print("-" * 38)
 if username in users and users[username] == password:
@@ -106,7 +106,7 @@ print("-" * 28)
 print("LEN|".rjust(5), "OCCURENCES".ljust(15), "|NR.")
 print("-" * 28)
 
-occurence = []
+occurence = {}
 
 for word in chosen_text_slova:
     length = len(word)
